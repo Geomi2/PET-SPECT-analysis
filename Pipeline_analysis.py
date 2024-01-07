@@ -99,5 +99,7 @@ print(feat_names)
 new_data = XX[feat_names]
 new_data=pd.concat((new_data,tar),axis=1)
 
+
+#Saved excel file for further process in MedCalc Software as described in paper
 save_path = '/your_save_path'
 new_data.to_excel(save_path,index=False)
